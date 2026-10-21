@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/nanoporetech/kmer_models",
+  "commit": "4e56daed7fbb79b538f58e41262d5c54b07356ea",
+  "tables": {
+    "dna_r10.4.1_e8.2_400bps": {
+      "seq_type": "dna",
+      "pore_type": "r10",
+      "path": "dna_r10.4.1_e8.2_400bps/9mer_levels_v1.txt",
+      "kmer_size": 9,
+      "file_sha256": "e5e154511d50c7e288c020a933fa66cc15d87ec06f903baa739e0a5c390cf23c",
+      "table_sha256": "c6123c30330843bcd899b58039f1fbd2ef7cbbd02948f32a31de87f797c6dc2c"
+    },
+    "rna004": {
+      "seq_type": "rna",
+      "pore_type": "rna004",
+      "path": "rna004/9mer_levels_v1.txt",
+      "kmer_size": 9,
+      "file_sha256": "1d366c9e060f31be1d6489b88b415666fba42f1c4006e1e549666f4a50f13e63",
+      "table_sha256": "985a7595a20c4c75f0f5e336aaca1b2a74c134c999f2d26db46dac08f9796f81"
+    },
+    "rna002": {
+      "seq_type": "rna",
+      "pore_type": "rna002",
+      "path": "rna_r9.4_180mv_70bps/5mer_levels_v1.txt",
+      "kmer_size": 5,
+      "file_sha256": "a7d879305798c87cb35a6aac65a92c08f55a07103400db9bb59b2455f9ba428f",
+      "table_sha256": "b5dd957056e23401461aace34e82db6847869aa1b6c8419ec8f7df5d83670868"
+    }
+  }
+}

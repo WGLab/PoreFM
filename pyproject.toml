@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "porefm"
+version = "0.1.0"
+description = "PoreFM nanopore foundation-model training, inference, and analysis workflows"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "blosc2",
+    "duckdb>=1.5",
+    "einops",
+    "flash-attn==2.8.3",
+    "jsonschema>=4.18",
+    "loky",
+    "matplotlib",
+    "natsort",
+    "ncls",
+    "numba>=0.59",
+    "numpy",
+    "numpy-indexed",
+    "pandas",
+    "pod5",
+    "polars",
+    "pyarrow>=14",
+    "pyfaidx",
+    "pyranges1",
+    "pysam",
+    "safetensors",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "torch==2.10.0",
+]
+
+[project.urls]
+Repository = "https://github.com/WGLab/PoreFM"
+Documentation = "https://wglab.github.io/PoreFM/"
+Issues = "https://github.com/WGLab/PoreFM/issues"
+
+[project.optional-dependencies]
+exclusions = ["ncls"]
+effect-decoder = ["numba>=0.59"]
+outputs = ["numpy", "pandas", "pyarrow>=14", "duckdb>=1.5", "scipy", "pysam", "scikit-learn", "numba>=0.59"]
+
+[project.scripts]
+porefm = "porefm.cli.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+porefm = ["resources/kmer_models/manifest.json", "resources/kmer_models/*.md", "resources/kmer_models/COPYRIGHT", "resources/kmer_models/*/*.txt"]

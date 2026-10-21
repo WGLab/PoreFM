@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite PoreFM and record the software version, Git revision, and model releases used in your analysis."
+type: software
+title: PoreFM
+authors:
+  - name: PoreFM contributors
+version: 0.1.0
+repository-code: "https://github.com/WGLab/PoreFM"
+url: "https://wglab.github.io/PoreFM/"
+license: MIT

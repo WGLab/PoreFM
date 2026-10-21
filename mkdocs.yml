@@ -1,0 +1,135 @@
+site_name: PoreFM
+site_description: A foundation model for nanopore signal and sequence
+site_url: https://wglab.github.io/PoreFM/
+
+repo_name: WGLab/PoreFM
+repo_url: https://github.com/WGLab/PoreFM
+
+# Publish only these Markdown pages; keep this list aligned with nav.
+exclude_docs: |
+  **/*.md
+  !/index.md
+  !/getting-started/installation.md
+  !/examples.md
+  !/guides/inputs.md
+  !/models.md
+  !/guides/supervised.md
+  !/guides/zero-shot.md
+  !/guides/pairwise.md
+  !/guides/residual-prototypes.md
+  !/guides/embeddings.md
+  !/guides/outputs.md
+  !/outputs.md
+  !/reference/output-analysis.md
+  !/configuration.md
+  !/reference/inference-inputs.md
+  !/reference/training-inputs.md
+  !/reference/pretraining-policies.md
+  !/reference/chunking.md
+  !/preprocessing.md
+  !/canonical-null-inference.md
+  !/embedding-comparisons.md
+  !/prototype_effects.md
+  !/reference/prototype-fitting.md
+  !/reference/prototype-runtime.md
+  !/reference/prototype-outputs.md
+  !/prototype-classifiers.md
+  !/supervised-classifier.md
+  !/classifier-numerical-stability.md
+  !/model-compilation.md
+  !/run-output-safety.md
+  !/api/models.md
+  !/project.md
+  **/__pycache__/**
+
+nav:
+  - Home: index.md
+  - Get started:
+      - Installation: getting-started/installation.md
+      - First result with HeLa RNA: examples.md
+      - Inputs and models: guides/inputs.md
+  - Models: models.md
+  - Analysis guides:
+      - Supervised detection: guides/supervised.md
+      - Zero-shot detection: guides/zero-shot.md
+      - Pairwise comparison: guides/pairwise.md
+      - Prototype-based joint footprinting: guides/residual-prototypes.md
+      - Export embeddings: guides/embeddings.md
+  - Process outputs: guides/outputs.md
+  - Reference:
+      - Output API: outputs.md
+      - Advanced output analysis: reference/output-analysis.md
+      - Configuration:
+          - CLI and config formats: configuration.md
+          - Inference inputs: reference/inference-inputs.md
+          - Supervised labels and training inputs: reference/training-inputs.md
+          - Signal dropout during training: reference/pretraining-policies.md
+          - Signal chunking: reference/chunking.md
+      - Chemistry and preprocessing: preprocessing.md
+      - Zero-shot options: canonical-null-inference.md
+      - Pairwise options: embedding-comparisons.md
+      - Prototypes:
+          - Effect model: prototype_effects.md
+          - Fit a custom effect model: reference/prototype-fitting.md
+          - Scoring and resources: reference/prototype-runtime.md
+          - Output files and BAM tags: reference/prototype-outputs.md
+          - Other prototype scorers: prototype-classifiers.md
+      - Supervised classifier: supervised-classifier.md
+      - Numerical stability: classifier-numerical-stability.md
+      - Model compilation: model-compilation.md
+      - Output safeguards: run-output-safety.md
+      - Python model API: api/models.md
+  - Project: project.md
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            - src
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
