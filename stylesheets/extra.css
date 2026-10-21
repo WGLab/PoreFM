@@ -1,0 +1,6 @@
+/* Give transparent scientific diagrams a consistent, readable backdrop. */
+.md-typeset img.porefm-diagram {
+  background: #ffffff;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}

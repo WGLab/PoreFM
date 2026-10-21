@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440" role="img" aria-labelledby="title description">
+  <title id="title">Five applications of PoreFM models</title>
+  <desc id="description">Nanopore signal and basecalled sequence support five applications: generating signal-contextualized base sequence embeddings with the pretrained backbone; supervised modification calling with fine-tuned classifiers; modification calling with prototypes learned from small labelled datasets and footprinting to account for neighboring effects; zero-shot anomaly detection against a canonical reference model; and comparison with a matched control sample.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1120" height="440" rx="16" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+    <rect x="200" y="20" width="720" height="84" rx="12" fill="#eef4ff" stroke="#245da8" stroke-width="1.5"/>
+    <text x="560" y="55" font-size="24" font-weight="bold">Nanopore signal + basecalled sequence</text>
+    <text x="560" y="83" font-size="19">PoreFM models for DNA and RNA</text>
+    <path d="M560 105 V133 M128 133 H992" fill="none" stroke="#64748b" stroke-width="1.5"/>
+    <g fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)">
+      <path d="M128 133 V156"/>
+      <path d="M344 133 V156"/>
+      <path d="M560 133 V156"/>
+      <path d="M776 133 V156"/>
+      <path d="M992 133 V156"/>
+    </g>
+
+    <g>
+      <rect x="28" y="163" width="200" height="253" rx="12" fill="#eef4ff" stroke="#527bb1"/>
+      <text x="128" y="195" font-size="22" font-weight="bold">Embedding</text>
+      <text x="128" y="221" font-size="22" font-weight="bold">generation</text>
+      <text x="128" y="266" font-size="18">Pretrained backbone</text>
+      <path d="M48 294 H208" stroke="#527bb1" stroke-opacity="0.3"/>
+      <text x="128" y="324" font-size="17">Signal-contextualized</text>
+      <text x="128" y="349" font-size="18">base sequence</text>
+      <text x="128" y="374" font-size="18" font-weight="bold">embeddings</text>
+    </g>
+
+    <g>
+      <rect x="244" y="163" width="200" height="253" rx="12" fill="#fff2e8" stroke="#bc5a16"/>
+      <text x="344" y="195" font-size="22" font-weight="bold">Supervised</text>
+      <text x="344" y="221" font-size="22" font-weight="bold">detection</text>
+      <text x="344" y="266" font-size="18">Fine-tuned classifiers</text>
+      <path d="M264 294 H424" stroke="#bc5a16" stroke-opacity="0.3"/>
+      <text x="344" y="324" font-size="18" font-weight="bold">Modification calls</text>
+      <text x="344" y="349" font-size="18">+ probabilities</text>
+      <text x="344" y="399" font-size="15" fill="#5b6473">No control required</text>
+    </g>
+
+    <g>
+      <rect x="460" y="163" width="200" height="253" rx="12" fill="#f5effc" stroke="#7953ad"/>
+      <text x="560" y="195" font-size="22" font-weight="bold">Prototype</text>
+      <text x="560" y="221" font-size="22" font-weight="bold">footprinting</text>
+      <text x="560" y="253" font-size="18">Prototypes from small</text>
+      <text x="560" y="277" font-size="18">labelled datasets</text>
+      <path d="M480 294 H640" stroke="#7953ad" stroke-opacity="0.3"/>
+      <text x="560" y="324" font-size="18" font-weight="bold">Modification calls</text>
+      <text x="560" y="349" font-size="18">+ relative scores</text>
+      <text x="560" y="399" font-size="15" fill="#5b6473">No control required</text>
+    </g>
+
+    <g>
+      <rect x="676" y="163" width="200" height="253" rx="12" fill="#eaf7f7" stroke="#16848b"/>
+      <text x="776" y="195" font-size="22" font-weight="bold">Zero-shot</text>
+      <text x="776" y="221" font-size="22" font-weight="bold">detection</text>
+      <text x="776" y="253" font-size="18">Canonical reference</text>
+      <text x="776" y="277" font-size="18">model</text>
+      <path d="M696 294 H856" stroke="#16848b" stroke-opacity="0.3"/>
+      <text x="776" y="324" font-size="18" font-weight="bold">Anomaly scores</text>
+      <text x="776" y="349" font-size="18">+ p-values</text>
+      <text x="776" y="399" font-size="15" fill="#5b6473">No control required</text>
+    </g>
+
+    <g>
+      <rect x="892" y="163" width="200" height="253" rx="12" fill="#edf7ee" stroke="#2a8050"/>
+      <text x="992" y="195" font-size="22" font-weight="bold">Pairwise</text>
+      <text x="992" y="221" font-size="22" font-weight="bold">comparison</text>
+      <text x="992" y="253" font-size="18">Test sample versus</text>
+      <text x="992" y="277" font-size="18">matched control</text>
+      <path d="M912 294 H1072" stroke="#2a8050" stroke-opacity="0.3"/>
+      <text x="992" y="324" font-size="18" font-weight="bold">Embedding shifts</text>
+      <text x="992" y="349" font-size="18">+ anomaly scores</text>
+      <text x="992" y="399" font-size="15" fill="#5b6473">Control required</text>
+    </g>
+  </g>
+</svg>

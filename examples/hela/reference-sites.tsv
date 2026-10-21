@@ -1,0 +1,4 @@
+chrom	position_1based	strand	modification	assay	assay_percentage	reference
+chr9	134843485	+	pseU	BACS	15.6	https://doi.org/10.1038/s41592-024-02439-8
+chr9	134843496	+	m6A	GLORI	71.6	https://pubmed.ncbi.nlm.nih.gov/36302990/
+chr9	134843607	+	m6A	GLORI	64.1	https://pubmed.ncbi.nlm.nih.gov/36302990/
